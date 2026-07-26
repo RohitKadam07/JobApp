@@ -10,6 +10,7 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)
 
 </p># 🚀 JobApp - Spring Boot Job Portal
+
 JobApp is a beginner-friendly full-stack web application that simulates the core functionality of a real-world Job Portal.
 The primary objective of this project is to understand how enterprise-level Java web applications are developed using Spring Boot. 
 It demonstrates the complete request lifecycle, layered architecture, dependency injection, form handling, and dynamic page rendering using JSP.
@@ -19,7 +20,9 @@ The application currently stores data in memory using Java Collections, making i
 intentionally designed so that migrating to a relational database (MySQL/PostgreSQL) requires minimal changes.
 
 
+
 # 🎯 Project Objectives
+
 - Learn Spring Boot fundamentals
 - Understand MVC Architecture
 - Build a complete Java Web Application
@@ -32,8 +35,10 @@ intentionally designed so that migrating to a relational database (MySQL/Postgre
 - Prepare a strong backend project for software engineering interviews
 
 
+
 # ✨ Features
-✔ Add New Job Post
+
+✔ Add New Job Post 
 ✔ View All Available Jobs
 ✔ Responsive User Interface
 ✔ MVC Architecture
@@ -47,7 +52,9 @@ intentionally designed so that migrating to a relational database (MySQL/Postgre
 ✔ Bootstrap Based UI
 
 
+
 # 🏗️ System Architecture
+
 The application follows the **Spring Boot MVC (Model-View-Controller)** architecture.
 
 ```text
@@ -77,6 +84,7 @@ Each layer has a dedicated responsibility, making the application highly modular
 
 
 # 📂 Project Structure
+
 ```text
 JobApp
 │
@@ -164,6 +172,7 @@ The Controller retrieves all JobPost objects from the Repository through the Ser
 
 
 # 🧠 Project Components
+
 ## 📦 Model
 Represents the application's data.
 Contains:
@@ -202,6 +211,7 @@ Responsible for displaying data to users through dynamic web pages.
 
 
 # 💻 Tech Stack
+
 ## Frontend
 - HTML5
 - CSS3
@@ -231,6 +241,7 @@ Responsible for displaying data to users through dynamic web pages.
 
 
 # 🚀 Future Enhancements
+
 This project is designed to be easily extendable.
 
 Planned improvements include:
@@ -252,3 +263,14 @@ Planned improvements include:
 - 🐳 Docker Deployment
 - ☁ AWS Deployment
 - 🔄 CI/CD using GitHub Actions
+
+
+
+
+# 👨‍💻 Author
+
+**Krishna Kadam**
+🎓 Computer Science Engineering Student
+💻 Aspiring Java Backend Developer
+🚀 Passionate about Java, Spring Boot, REST APIs, and Scalable Backend Systems.
+If you found this project helpful, consider giving it a ⭐ on GitHub!
