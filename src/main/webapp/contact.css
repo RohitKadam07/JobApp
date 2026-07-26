@@ -1,0 +1,643 @@
+/* =========================================================
+   CONTACT.CSS - PART 1
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    background-attachment:fixed;
+    overflow-x:hidden;
+}
+
+/* ===============================
+   BACKGROUND GLOW
+================================ */
+
+body::before{
+    content:'';
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#ff5f6d;
+    border-radius:50%;
+    top:-150px;
+    left:-150px;
+    filter:blur(140px);
+    opacity:.40;
+    z-index:-1;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#36d1dc;
+    border-radius:50%;
+    bottom:-170px;
+    right:-170px;
+    filter:blur(150px);
+    opacity:.40;
+    z-index:-1;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.navbar{
+
+    background:rgba(255,255,255,.15)!important;
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:0 8px 30px rgba(0,0,0,.18);
+
+    padding:18px 0;
+
+}
+
+.navbar-brand{
+
+    color:white!important;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.nav-link{
+
+    color:white!important;
+
+    font-weight:500;
+
+    padding:8px 16px!important;
+
+    border-radius:10px;
+
+    transition:.35s;
+
+}
+
+.nav-link:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateY(-2px);
+
+}
+
+.nav-link.active{
+
+    background:rgba(255,255,255,.22);
+
+}
+
+/* ===============================
+   HERO
+================================ */
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 20px 45px;
+
+}
+
+.hero h1{
+
+    color:white;
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+    animation:fadeDown .7s ease;
+
+}
+
+.hero p{
+
+    color:#ececec;
+
+    max-width:720px;
+
+    margin:auto;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    animation:fadeDown .9s ease;
+
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+
+.container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ===============================
+   GLASS CARDS
+================================ */
+
+.info-card,
+.form-card{
+
+    background:rgba(255,255,255,.16);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:none;
+
+    border-radius:24px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.20);
+
+    color:white;
+
+    padding:35px;
+
+    transition:.35s;
+
+    animation:fadeUp .7s ease;
+
+}
+
+.info-card:hover,
+.form-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.28);
+
+}
+
+.info-card h3,
+.form-card h3{
+
+    font-weight:700;
+
+    margin-bottom:30px;
+
+}
+
+/* ===============================
+   CONTACT INFO
+================================ */
+
+.info-item{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:28px;
+
+}
+
+.info-item i{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    font-size:24px;
+
+    margin-right:18px;
+
+    transition:.3s;
+
+}
+
+.info-item:hover i{
+
+    transform:scale(1.1);
+
+    background:linear-gradient(135deg,#ff512f,#dd2476);
+
+}
+
+.info-item h6{
+
+    font-weight:600;
+
+    margin-bottom:4px;
+
+    color:white;
+
+}
+
+.info-item p{
+
+    margin:0;
+
+    color:#ececec;
+
+    font-size:.95rem;
+
+}
+
+/* ===============================
+   DIVIDER
+================================ */
+
+.info-card hr{
+
+    border-color:rgba(255,255,255,.18);
+
+    margin:30px 0;
+
+}
+
+/* ===============================
+   SOCIAL ICONS
+================================ */
+
+.social-links{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.social-links a{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:.35s;
+
+}
+
+.social-links a:hover{
+
+    transform:translateY(-5px);
+
+    background:linear-gradient(135deg,#ff512f,#dd2476);
+
+    color:white;
+
+}
+/* =========================================================
+   CONTACT.CSS - PART 2
+   (Continue directly after Part 1)
+   ========================================================= */
+
+/* ===============================
+   FORM LABELS
+================================ */
+
+.form-card label{
+
+    color:white;
+
+    font-weight:500;
+
+    margin-bottom:8px;
+
+    display:block;
+
+}
+
+/* ===============================
+   INPUTS
+================================ */
+
+.form-control{
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px 18px;
+
+    background:rgba(255,255,255,.88);
+
+    color:#333;
+
+    transition:.35s;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.form-control::placeholder{
+
+    color:#777;
+
+}
+
+.form-control:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.form-control:focus{
+
+    background:white;
+
+    border:none;
+
+    outline:none;
+
+    box-shadow:0 0 0 4px rgba(255,255,255,.35);
+
+    transform:scale(1.02);
+
+}
+
+textarea.form-control{
+
+    resize:none;
+
+    min-height:180px;
+
+}
+
+/* ===============================
+   SEND BUTTON
+================================ */
+
+.btn-send{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(90deg,#ff512f,#dd2476);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(221,36,118,.35);
+
+}
+
+.btn-send:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(221,36,118,.45);
+
+    color:white;
+
+}
+
+/* ===============================
+   FAQ SECTION
+================================ */
+
+.faq-section{
+
+    padding:80px 0 30px;
+
+}
+
+.faq-section h2{
+
+    color:white;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+
+}
+
+/* ===============================
+   ACCORDION
+================================ */
+
+.accordion{
+
+    border-radius:24px;
+
+}
+
+.accordion-item{
+
+    margin-bottom:18px;
+
+    border:none;
+
+    border-radius:18px!important;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.accordion-button{
+
+    background:transparent;
+
+    color:white;
+
+    font-weight:600;
+
+    padding:20px;
+
+    border:none;
+
+    box-shadow:none;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+}
+
+.accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+.accordion-button::after{
+
+    filter:brightness(0) invert(1);
+
+}
+
+.accordion-body{
+
+    background:transparent;
+
+    color:#ececec;
+
+    line-height:1.8;
+
+    padding:22px;
+
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer{
+
+    margin-top:70px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:white;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+footer p{
+
+    margin:0;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.info-card,
+.form-card{
+
+    animation:fadeUp .7s ease;
+
+}
+
+.faq-section{
+
+    animation:fadeUp .9s ease;
+
+}

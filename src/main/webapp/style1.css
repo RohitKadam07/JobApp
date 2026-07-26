@@ -1,0 +1,273 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    background-attachment:fixed;
+}
+
+/* Navbar */
+
+.navbar{
+    background:rgba(255,255,255,0.15)!important;
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    box-shadow:0 8px 32px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    color:white!important;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:white!important;
+    font-weight:500;
+    transition:.3s;
+    border-radius:8px;
+    padding:8px 15px!important;
+}
+
+.nav-link:hover{
+    background:rgba(255,255,255,.15);
+    transform:translateY(-2px);
+}
+
+/* Card */
+
+.card{
+    margin-top:20px;
+    border:none;
+    border-radius:25px;
+    overflow:hidden;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+    animation:fadeIn .8s ease;
+}
+
+.card-body{
+    padding:40px;
+}
+
+.card h2{
+    color:white;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+/* Labels */
+
+.form-label{
+    color:white;
+    font-weight:500;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select{
+
+    border:none;
+    border-radius:14px;
+    padding:14px 18px;
+    background:rgba(255,255,255,.88);
+    transition:.35s;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.form-control:hover,
+.form-select:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    background:white;
+    border:none;
+    box-shadow:0 0 0 4px rgba(255,255,255,.35);
+    transform:scale(1.02);
+
+}
+
+/* Textarea */
+
+textarea{
+
+    resize:none;
+
+}
+
+/* Multiple Select */
+
+select[multiple]{
+
+    height:180px;
+
+}
+
+/* Scrollbar */
+
+select[multiple]::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+select[multiple]::-webkit-scrollbar-thumb{
+
+    background:#7c4dff;
+    border-radius:20px;
+
+}
+
+select[multiple] option{
+
+    padding:10px;
+    border-radius:8px;
+    transition:.2s;
+
+}
+
+select[multiple] option:hover{
+
+    background:#ece8ff;
+
+}
+
+/* Button */
+
+.btn-primary{
+
+    width:100%;
+    padding:14px;
+    margin-top:15px;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(90deg,#ff512f,#dd2476);
+    font-size:17px;
+    font-weight:600;
+    transition:.35s;
+    box-shadow:0 12px 25px rgba(221,36,118,.35);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 18px 35px rgba(221,36,118,.45);
+
+}
+
+/* Input Animation */
+
+.mb-1,
+.mb-2{
+
+    animation:slideUp .5s ease forwards;
+
+}
+
+/* Card Animation */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Background Glow */
+
+body::before{
+
+    content:'';
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#ff5f6d;
+    border-radius:50%;
+    top:-150px;
+    left:-150px;
+    filter:blur(140px);
+    opacity:.45;
+    z-index:-1;
+
+}
+
+body::after{
+
+    content:'';
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#36d1dc;
+    border-radius:50%;
+    bottom:-170px;
+    right:-170px;
+    filter:blur(150px);
+    opacity:.45;
+    z-index:-1;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.card-body{
+
+padding:25px;
+
+}
+
+.navbar-brand{
+
+font-size:22px!important;
+
+}
+
+}

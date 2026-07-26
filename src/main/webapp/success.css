@@ -1,0 +1,325 @@
+/* =========================================================
+   SUCCESS PAGE
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    background-attachment:fixed;
+    overflow-x:hidden;
+}
+
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
+
+body::before{
+    content:'';
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#ff5f6d;
+    border-radius:50%;
+    top:-160px;
+    left:-160px;
+    filter:blur(140px);
+    opacity:.40;
+    z-index:-1;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#36d1dc;
+    border-radius:50%;
+    bottom:-170px;
+    right:-170px;
+    filter:blur(150px);
+    opacity:.40;
+    z-index:-1;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar{
+
+    background:rgba(255,255,255,.15)!important;
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:0 8px 30px rgba(0,0,0,.18);
+
+    padding:18px 0;
+
+}
+
+.navbar-brand{
+
+    color:white!important;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.nav-link{
+
+    color:white!important;
+
+    font-weight:500;
+
+    border-radius:10px;
+
+    padding:8px 16px!important;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+h2{
+
+    color:white;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+
+    letter-spacing:.5px;
+
+    animation:fadeDown .7s ease;
+
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.card{
+
+    border:none!important;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.15)!important;
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    color:white!important;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.20);
+
+    transition:.35s;
+
+    animation:fadeUp .7s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 55px rgba(0,0,0,.28);
+
+}
+
+.card-body{
+
+    padding:35px;
+
+}
+
+.card-title{
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:white;
+
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.card-text{
+
+    color:#f5f5f5;
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+}
+
+.card strong{
+
+    color:white;
+
+}
+
+ul{
+
+    margin-top:10px;
+
+    padding-left:22px;
+
+}
+
+li{
+
+    margin-bottom:8px;
+
+    color:white;
+
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.card-footer{
+
+    background:transparent!important;
+
+    border:none!important;
+
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#7c4dff;
+
+    border-radius:20px;
+
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:992px){
+
+    .card{
+
+        margin-top:10px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    h2{
+
+        font-size:2rem;
+
+    }
+
+    .card-body{
+
+        padding:25px;
+
+    }
+
+    .card-title{
+
+        font-size:1.5rem;
+
+    }
+
+    .navbar-brand{
+
+        font-size:1.5rem!important;
+
+    }
+
+}
