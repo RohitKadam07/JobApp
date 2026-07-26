@@ -269,7 +269,7 @@ Planned improvements include:
 
 # 👨‍💻 Author
 
-**Krishna Kadam**
+**Krishna Kadam** <br>
 🎓 Computer Science Engineering Student <br>
 💻 Aspiring Java Backend Developer <br>
 🚀 Passionate about Java, Spring Boot, REST APIs, and Scalable Backend Systems. <br>
